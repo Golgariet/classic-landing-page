@@ -1,0 +1,16 @@
+{
+  "name": "classic-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass SCSS/main.scss css/style.css -w",
+    "compile:sass": "node-sass SCSS/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/style.comp.css"
+  },
+  "author": "Antons Bibergals",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
