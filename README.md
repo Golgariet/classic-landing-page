@@ -1,5 +1,5 @@
 # Classic landing page
 
-![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
-
 ## Welcome! 👋
+
+The page is still in construction.
