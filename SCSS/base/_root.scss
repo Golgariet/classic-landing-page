@@ -23,6 +23,7 @@
 body {
     margin: 0;
     font-family: 'Karla', sans-serif;
+    font-weight: normal;
     color: var(--color-dark-violet);
 
 }
@@ -31,20 +32,29 @@ h1, h2, h3 {
     font-family: 'DM Serif Display', sans-serif;
 }
 
-h1 {
+h1, h2 {
+    position: relative;
     font-size: 4em;
     letter-spacing: 2px;
     line-height: 1;
+    margin: 0;
+    padding-top: 50px;
 }
 
-h1::before {
+.line-top::before {
     content: '';
-    width: 100px;
-    height: 2px;
+    width: 150px;
+    height: 1px;
     background-color: #fff;
     position: absolute;
     top: 0;
     left: 0;
+
+}
+
+
+.line-viol::before {
+    background-color: var(--color-dark-violet);
 }
 
 .btn {
@@ -78,6 +88,10 @@ h1::before {
     flex: 1;
 }
 
+.align-start {
+    align-items: flex-start;
+}
+
 nav {
 
 }
@@ -105,6 +119,7 @@ header {
     color: #fff;
     padding: 50px 0;
     position: relative;
+    margin-bottom: 250px;
 
 }
 
@@ -126,10 +141,14 @@ header::before {
     position: absolute;
     background-repeat: no-repeat;
     background-position: bottom right;
-    bottom: -40%;
+    bottom: -50%;
     left: 0;
     height: 100%;
     width: 100%;
+}
+
+.stretch-img {
+    margin-bottom: -250px;
 }
 
 section {
