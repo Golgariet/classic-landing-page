@@ -31,11 +31,34 @@ h1, h2, h3 {
     font-family: 'DM Serif Display', sans-serif;
 }
 
+h1 {
+    font-size: 4em;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+h1::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .btn {
     background-color: transparent;
     border: 2px solid #fff;
-    padding: 10px 15px;
+    padding: 15px 25px;
+    letter-spacing: 2px;
     color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-reverse {
+    color: var(--color-dark-violet);
+    border-color: var(--color-dark-violet);
 }
 
 .container {
@@ -47,8 +70,8 @@ h1, h2, h3 {
 
 .flex {
     display: flex;
-    max-width: 100%;
-    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .flex > div {
@@ -80,7 +103,33 @@ nav li a {
 header {
     background-color: var(--color-dark-violet);
     color: #fff;
+    padding: 50px 0;
+    position: relative;
 
+}
+
+header::after {
+    content: '';
+    background-image: url('../images/bg-pattern-intro-right-desktop.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: top right;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header::before {
+    content: '';
+    background-image: url('../images/bg-pattern-intro-right-desktop.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    bottom: -40%;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 section {
